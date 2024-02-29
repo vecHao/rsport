@@ -1,0 +1,27 @@
+[package]
+name = "rsport"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+quinn = "0.10.0"
+tokio = { version = "1.36.0", features = ["full"] }
+rustls = { version = "0.21.0", default-features = false, features = ["quic", "dangerous_configuration"], optional = true}
+rcgen = "0.12.1"
+# icmp-socket = "0.2.0"
+clap = { version = "4.5.1", features = ["derive"] }
+
+
+
+# [target.x86_64-unknown-linux-gnu]
+# linker = "x86_64-linux-gnu-gcc"
+
+
+# [patch.crates-io]
+# icmp-socket = { path = "C:/Users/LH/.cargo/registry/src/index.crates.io-6f17d22bba15001f/icmp-socket-0.2.0" }
+
+[features]
+default = ["rustls"]
+
