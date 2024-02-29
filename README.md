@@ -10,7 +10,6 @@ cli usage:
 
   server --addr 0.0.0.0:1111
 
-
-
+use self-signed CA
 
 
