@@ -19,9 +19,6 @@ clap = { version = "4.5.1", features = ["derive"] }
 # linker = "x86_64-linux-gnu-gcc"
 
 
-# [patch.crates-io]
-# icmp-socket = { path = "C:/Users/LH/.cargo/registry/src/index.crates.io-6f17d22bba15001f/icmp-socket-0.2.0" }
-
 [features]
 default = ["rustls"]
 
